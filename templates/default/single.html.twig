@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My First Admin!{% endblock %}
+
+{% block body %}
+    <div>Title: {{ post.title }}</div>
+    <div>Title1: {{ post.content|replace({' ':''}) }}</div>
+
+
+{% endblock %}

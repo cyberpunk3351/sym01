@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My First Admin!{% endblock %}
+
+{% block body %}
+    {% for posts in post %}
+
+        <h3>{{ posts.title }}</h3>
+        <div class="text-white bg-white"><a href="{{ path('single', {'post': posts.id }) }}">Watch</a></div>
+
+    {% endfor %}
+
+
+{% endblock %}
