@@ -5,8 +5,9 @@
 {% block body %}
     {% for posts in post %}
 
-        <h3>{{ posts.title }}</h3>
-        <div class="text-white bg-white"><a href="{{ path('single', {'post': posts.id }) }}">Watch</a></div>
+        <h5>{{ posts.title }}</h5>
+        <small class="form-text text-muted">{{ posts.id }}</small>
+        <p class="card-link"><a href="{{ path('single', {'post': posts.id }) }}">Watch</a></p>
 
     {% endfor %}
 

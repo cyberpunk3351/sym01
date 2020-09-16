@@ -3,8 +3,8 @@
 {% block title %}My First Admin!{% endblock %}
 
 {% block body %}
-    <div>Title: {{ post.title }}</div>
-    <div>Title1: {{ post.content|replace({' ':''}) }}</div>
+    <h5 class="card-title">{{ post.title }}</h5>
+    <p class="card-text">{{ post.content}}</p>
 
 
 {% endblock %}
